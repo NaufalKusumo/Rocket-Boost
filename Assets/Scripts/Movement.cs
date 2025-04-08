@@ -2,7 +2,9 @@ using UnityEngine;
 using UnityEngine.InputSystem; 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-   [SerializeField] InputAction thrust;
+
+   [SerializeField] InputAction thrust; 
+   // We have to add bindings to the script (bindings = space)
 
     private void OnEnable()
     {
