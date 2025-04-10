@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem; 
 public class NewMonoBehaviourScript : MonoBehaviour
@@ -17,11 +18,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
         thrust.Enable();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (thrust.IsPressed() == true)
         {
-            Debug.Log("Hello");
+            rb.AddRelativeForce(0, 30 ,0 ); // Applies force in the object’s local space.
         }
     }
 
