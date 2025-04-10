@@ -6,6 +6,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
    [SerializeField] InputAction thrust; 
    // We have to add bindings to the script (bindings = space)
+   [SerializeField] float thrustStrength = 500f;
     Rigidbody rb;
 
 
@@ -22,7 +23,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if (thrust.IsPressed() == true)
         {
-            rb.AddRelativeForce(0, 30 ,0 ); // Applies force in the object’s local space.
+            rb.AddRelativeForce(Vector3.up * thrustStrength * Time.fixedDeltaTime); // Applies force in the object’s local space.
         }
     }
 

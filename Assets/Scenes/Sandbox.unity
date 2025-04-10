@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.36, y: 3.93, z: -10}
+  m_LocalPosition: {x: -8.37, y: 3.93, z: -35.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -704,12 +704,12 @@ MonoBehaviour:
     m_Name: Thrust
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 3a34fe8c-1a8a-40de-900f-595dc161561d
+    m_Id: 6f504e9b-3262-4434-bdc2-477dd5e6543f
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: d4dfb48f-c3ec-4f05-8c42-742a777c9a33
+      m_Id: f47b4554-4d21-43d2-adb9-260260578971
       m_Path: <Keyboard>/space
       m_Interactions: 
       m_Processors: 
@@ -717,6 +717,7 @@ MonoBehaviour:
       m_Action: Thrust
       m_Flags: 0
     m_Flags: 0
+  thrustStrength: 500
 --- !u!54 &2143127940
 Rigidbody:
   m_ObjectHideFlags: 0
