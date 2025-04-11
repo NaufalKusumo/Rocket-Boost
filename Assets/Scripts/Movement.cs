@@ -1,12 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
 
    [SerializeField] InputAction thrust; 
+   [SerializeField] float rotationStrength = 0;
    // We have to add bindings to the script (bindings = space)
    [SerializeField] float thrustStrength = 500f;
+   [SerializeField] InputAction rotation;
     Rigidbody rb;
 
 
@@ -17,6 +20,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private void OnEnable()
     {
         thrust.Enable();
+        rotation.Enable();
     }
 
     void FixedUpdate()
@@ -24,6 +28,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (thrust.IsPressed() == true)
         {
             rb.AddRelativeForce(Vector3.up * thrustStrength * Time.fixedDeltaTime); // Applies force in the object’s local space.
+        }
+        float rt = rotation.ReadValue<float>();
+        if (rotation.IsPressed() == true)
+        {
+           transform.Rotate(Vector3.forward * rt * -1 * rotationStrength);
+           
         }
     }
 
