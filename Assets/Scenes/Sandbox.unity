@@ -275,7 +275,7 @@ MonoBehaviour:
   WorldUpOverride: {fileID: 0}
   ChannelMask: -1
   UpdateMethod: 0
-  BlendUpdateMethod: 1
+  BlendUpdateMethod: 0
   LensModeOverride:
     Enabled: 0
     DefaultMode: 2
@@ -799,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2759546765232118960, guid: 26890b06858450f48be118c049cd18f1, type: 3}
       propertyPath: rotationStrength
-      value: 3
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6089968083033559075, guid: 26890b06858450f48be118c049cd18f1, type: 3}
       propertyPath: m_Constraints
