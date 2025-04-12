@@ -207,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.86, y: 3.88, z: -9.469999}
+  m_LocalPosition: {x: -17.86, y: 3.88, z: -3.7000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -274,7 +274,7 @@ MonoBehaviour:
   IgnoreTimeScale: 0
   WorldUpOverride: {fileID: 0}
   ChannelMask: -1
-  UpdateMethod: 2
+  UpdateMethod: 0
   BlendUpdateMethod: 1
   LensModeOverride:
     Enabled: 0
@@ -660,7 +660,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 0.67, y: 0.69, z: -13.07}
+  FollowOffset: {x: 0.67, y: 0.69, z: -7.3}
 --- !u!114 &1396746638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,7 +713,7 @@ Transform:
   m_GameObject: {fileID: 1396746636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.86, y: 3.88, z: -9.469999}
+  m_LocalPosition: {x: -17.86, y: 3.88, z: -3.7000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
