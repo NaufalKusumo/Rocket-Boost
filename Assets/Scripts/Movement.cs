@@ -32,7 +32,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         float rt = rotation.ReadValue<float>();
         if (rotation.IsPressed() == true)
         {
-           transform.Rotate(Vector3.forward * rt * -1 * rotationStrength);
+           transform.Rotate(Vector3.forward * rt * -1 * rotationStrength * Time.fixedDeltaTime);
+           Debug.Log("Is ROTATING"); //Trying to fix rotating bug when hitting an object
            
         }
     }
